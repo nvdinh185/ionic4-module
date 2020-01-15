@@ -3,6 +3,8 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { WordsComponent } from '../components/words/words.component';
+import { Words2Component } from '../components/words2/words2.component';
 
 @NgModule({
   imports: [
@@ -14,6 +16,7 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  entryComponents: [WordsComponent],
+  declarations: [HomePage, WordsComponent, Words2Component]
 })
 export class HomePageModule {}
