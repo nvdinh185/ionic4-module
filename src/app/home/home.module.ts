@@ -4,11 +4,12 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { WordsComponent } from '../components/words/words.component';
-import { RoundPipe } from '../pipes/round.pipe';
+import { SharedModule } from '../modules/shared/shared.module';
 
 @NgModule({
   imports: [
     IonicModule,
+    SharedModule,
     RouterModule.forChild([
       {
         path: '',
@@ -20,7 +21,6 @@ import { RoundPipe } from '../pipes/round.pipe';
   declarations: [
     HomePage,
     WordsComponent,
-    RoundPipe
   ]
 })
 export class HomePageModule { }

@@ -6,8 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { NumbersPage } from './numbers.page';
-import { RoundPipe } from 'src/app/pipes/round.pipe';
 import { WordsComponent } from 'src/app/components/words/words.component';
+import { SharedModule } from 'src/app/modules/shared/shared.module';
 
 const routes: Routes = [
   {
@@ -21,12 +21,12 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     RouterModule.forChild(routes)
   ],
   entryComponents: [WordsComponent],
   declarations: [
     NumbersPage,
-    RoundPipe,
     WordsComponent
   ]
 })
