@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { NumbersPage } from './numbers.page';
+import { RoundPipe } from 'src/app/pipes/round.pipe';
 import { WordsComponent } from 'src/app/components/words/words.component';
 
 const routes: Routes = [
@@ -22,6 +23,11 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [NumbersPage, WordsComponent]
+  entryComponents: [WordsComponent],
+  declarations: [
+    NumbersPage,
+    RoundPipe,
+    WordsComponent
+  ]
 })
-export class NumbersPageModule {}
+export class NumbersPageModule { }

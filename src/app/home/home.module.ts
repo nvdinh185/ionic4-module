@@ -18,9 +18,9 @@ import { RoundPipe } from '../pipes/round.pipe';
   ],
   entryComponents: [WordsComponent],
   declarations: [
-    HomePage, 
+    HomePage,
     WordsComponent,
     RoundPipe
   ]
 })
-export class HomePageModule {}
+export class HomePageModule { }

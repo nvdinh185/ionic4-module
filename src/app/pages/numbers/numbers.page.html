@@ -1,9 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>numbers</ion-title>
+    <ion-button color="primary" (click)="open()">WORD</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <app-words></app-words>
+  <p>{{ 10 | roundNum }}</p>
 </ion-content>

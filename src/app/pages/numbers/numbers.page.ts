@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { WordsComponent } from 'src/app/components/words/words.component';
 
 @Component({
   selector: 'app-numbers',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumbersPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
 
   ngOnInit() {
+  }
+
+  async open() {
+    const modal = await this.modalController.create({
+      component: WordsComponent
+    });
+    modal.present();
   }
 
 }
