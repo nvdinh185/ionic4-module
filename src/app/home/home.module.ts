@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { WordsComponent } from '../components/words/words.component';
-import { Words2Component } from '../components/words2/words2.component';
+import { RoundPipe } from '../pipes/round.pipe';
 
 @NgModule({
   imports: [
@@ -16,7 +16,11 @@ import { Words2Component } from '../components/words2/words2.component';
       }
     ])
   ],
-  entryComponents: [WordsComponent, Words2Component],
-  declarations: [HomePage, WordsComponent, Words2Component]
+  entryComponents: [WordsComponent],
+  declarations: [
+    HomePage, 
+    WordsComponent,
+    RoundPipe
+  ]
 })
 export class HomePageModule {}
