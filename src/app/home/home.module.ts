@@ -3,8 +3,8 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { WordsComponent } from '../components/words/words.component';
 import { SharedModule } from '../modules/shared/shared.module';
+import { WordsComponent } from '../components/words/words.component';
 
 @NgModule({
   imports: [
@@ -20,7 +20,6 @@ import { SharedModule } from '../modules/shared/shared.module';
   entryComponents: [WordsComponent],
   declarations: [
     HomePage,
-    WordsComponent,
   ]
 })
 export class HomePageModule { }

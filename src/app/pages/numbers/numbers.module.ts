@@ -6,8 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { NumbersPage } from './numbers.page';
-import { WordsComponent } from 'src/app/components/words/words.component';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { WordsComponent } from 'src/app/components/words/words.component';
 
 const routes: Routes = [
   {
@@ -27,7 +27,6 @@ const routes: Routes = [
   entryComponents: [WordsComponent],
   declarations: [
     NumbersPage,
-    WordsComponent
   ]
 })
 export class NumbersPageModule { }

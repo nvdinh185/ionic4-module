@@ -5,11 +5,16 @@
     </ion-buttons>
     <ion-title>
       Home
-    </ion-title>
+    </ion-title>    
     <ion-button color="primary" (click)="open()">WORD</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <p>{{ 10 | roundNum }}</p>
+  <app-words></app-words>
+  <ion-item routerLink="/numbers">
+    <ion-icon slot="start" color="primary" name="book"></ion-icon>
+    <ion-label>Numbers</ion-label>
+  </ion-item>
 </ion-content>
