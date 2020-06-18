@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RoundPipe } from 'src/app/pipes/round.pipe';
 import { WordsComponent } from 'src/app/components/words/words.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { WordsComponent } from 'src/app/components/words/words.component';
     WordsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [
     RoundPipe,
